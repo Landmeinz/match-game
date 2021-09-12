@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsla(0, 0%, 80%, 0.9);
+  color: hsla(0, 100%, 100%, 0.9);
+}
+
+h3 {
+  font-family: monospace;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  grid-template-rows: 50px 100px 100px 100px 100px;
+  grid-template-columns: 90px 90px 90px 90px;
+  grid-template-areas:  'matches matches trys trys'
+                        'board board board board'
+                        'board board board board'
+                        'board board board board'
+                        'board board board board';
+  padding: 3%;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 4px 5px -1px,
+              rgba(0, 0, 0, 0.5) 1px 3px 3px -1px;
+  background-color: hsla(220, 20%, 40%, 0.9);
+  width: 500px;
+  margin: 2.5% auto 2.5% auto;
+}
+
+.matches {
+  display: grid;
+  height: 100%;
+  grid-area: matches;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 4px 5px -1px,
+              rgba(0, 0, 0, 0.5) 1px 3px 3px -1px;
+}
+
+.trys {
+  display: grid;
+  height: 100%;
+  grid-area: trys;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 4px 5px -1px,
+              rgba(0, 0, 0, 0.5) 1px 3px 3px -1px;
+}
+
+.game-grid {
+  justify-content: center;
+  align-items: center;
+  grid-area: board;
+}
